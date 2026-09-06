@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Safora Mirzaee — Front-End Web Developer. Building modern, responsive, and user-friendly websites.">
+  <meta name="author" content="Safora Mirzaee">
+  <title>Safora Mirzaee | Front-End Web Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+  <!--  NAVIGATION  -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-text">Safora<span class="accent-dot">.</span></span>
+      </a>
+
+      <div class="nav-actions d-flex align-items-center order-lg-last">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6 hero-content reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Safora Mirzaee</h1>
+          <h2 class="hero-title">
+            <span class="typed-text">Front-End Web Developer</span>
+            <span class="cursor-blink">|</span>
+          </h2>
+          <p class="hero-description">
+            I create modern, responsive, and visually engaging websites using HTML, CSS, JavaScript, and Bootstrap. Passionate about turning creative ideas into functional digital experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary-custom">View My Work</a>
+            <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/saforamirzaee19-source" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/safora-mirzaee-0832ab423?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:saforamirzaee19@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-visual reveal delay-1">
+          <div class="hero-card glass-card">
+            <div class="code-window">
+              <div class="code-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="code-filename">developer.js</span>
+              </div>
+              <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Safora Mirzaee"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Front-End Developer"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building beautiful websites"</span>,
+  <span class="code-prop">status</span>: <span class="code-string">"Always learning"</span>
+};</code></pre>
+            </div>
+            <div class="floating-badge badge-1"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="floating-badge badge-2"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="floating-badge badge-3"><i class="fab fa-js"></i> JS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-text">Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT SECTION  -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Crafting Digital Experiences</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="row align-items-center g-5 mt-2">
+        <div class="col-lg-5 reveal">
+          <div class="about-image-wrapper">
+            <div class="about-image-frame">
+              <img src="/asests/images/safora.jpeg" alt="Safora Mirzaee" class="about-image">
+            </div>
+            <div class="about-image-accent"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal delay-1">
+          <h3 class="about-heading">Passionate Front-End Web Developer</h3>
+          <p class="about-text">
+            I'm a passionate Front-End Web Developer who loves creating modern, responsive, and user-friendly websites. I enjoy turning creative ideas into functional digital experiences using clean, well-structured code.
+          </p>
+          <p class="about-text">
+            I work primarily with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Bootstrap</strong>, and I'm continuously learning and improving my development skills. Every project I build is an opportunity to grow and refine my craft.
+          </p>
+          <p class="about-text">
+            My goal is to become a highly skilled professional Front-End Developer and build amazing, high-quality web experiences that make a lasting impression.
+          </p>
+
+          <div class="about-cards row g-3 mt-4">
+            <div class="col-sm-6">
+              <div class="info-card glass-card">
+                <i class="fas fa-code info-icon"></i>
+                <h4>Clean Code</h4>
+                <p>Writing organized, readable, and maintainable code.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card glass-card">
+                <i class="fas fa-mobile-alt info-icon"></i>
+                <h4>Responsive Design</h4>
+                <p>Websites that look great on every device.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card glass-card">
+                <i class="fas fa-rocket info-icon"></i>
+                <h4>Always Learning</h4>
+                <p>Continuously improving my skills and knowledge.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card glass-card">
+                <i class="fas fa-palette info-icon"></i>
+                <h4>Modern UI</h4>
+                <p>Creating beautiful and intuitive interfaces.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Replace href with your CV: assets/cv/safora-mirzaee-cv.pdf -->
+          <a href="asests/CV/SAFORA MIRZAEE.pdf" class="btn btn-primary-custom mt-4" download>
+            <i class="fas fa-download me-2"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION  -->
+  <section id="skills" class="section-padding bg-secondary">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">My Skills</span>
+        <h2 class="section-title">Technologies I Work With</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Tools and technologies I use to bring ideas to life</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <p>Semantic markup and accessible structure for modern web pages.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal delay-1">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <p>Styling, animations, Flexbox, Grid, and responsive layouts.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal delay-2">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <p>Interactive features, DOM manipulation, and dynamic content.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal delay-3">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+            <h4>Bootstrap</h4>
+            <p>Rapid prototyping with responsive grid and components.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h4>Git</h4>
+            <p>Version control for tracking changes and collaboration.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal delay-1">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fab fa-github"></i></div>
+            <h4>GitHub</h4>
+            <p>Hosting projects and showcasing my development work.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal delay-2">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Responsive Design</h4>
+            <p>Mobile-first layouts that adapt to any screen size.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal delay-3">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+            <h4>DOM Manipulation</h4>
+            <p>Creating dynamic and interactive user experiences.</p>
+            <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION  -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">A selection of my learning and practice projects</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Project 1: Nadiya Brand -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <img src="/asests/images/nadia-brand.png" alt="Nadiya Brand — Afghan Fashion Website">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/yourusername/nadiya-brand" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Nadiya Brand</h4>
+              <p>A modern Afghan fashion website with elegant design and rich features.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+              </div>
+              <ul class="project-features">
+                <li>Responsive design</li>
+                <li>Hero image slider</li>
+                <li>Gallery &amp; testimonials</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 2: Modern Architecture -->
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <img src="/asests/images/luxury-house.png" alt="Modern Architecture Website">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/saforamirzaee19-source/Modern-Architechture.git" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Modern Architecture</h4>
+              <p>A sleek architecture website focused on beautiful design and responsive layouts.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span>
+              </div>
+              <ul class="project-features">
+                <li>Modern layout</li>
+                <li>Responsive design</li>
+                <li>Creative sections</li>
+                <li>Professional UI</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 3: JavaScript Calculator -->
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <img src="/asests/images/calculator.png" alt="JavaScript Calculator">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/yourusername/js-calculator" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>JavaScript Calculator</h4>
+              <p>A stylish calculator app with interactive buttons and dynamic calculations.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <ul class="project-features">
+                <li>Basic math operations</li>
+                <li>Interactive buttons</li>
+                <li>Dynamic calculations</li>
+                <li>Clean UI</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 4: Bootstrap Landing Page -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Bootstrap Landing Page">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/yourusername/bootstrap-landing" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Bootstrap Landing Page</h4>
+              <p>A responsive landing page built with Bootstrap components and grid system.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 5: Interactive Form -->
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Interactive Form Project">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/yourusername/interactive-form" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Interactive Form</h4>
+              <p>A form with JavaScript validation, dynamic feedback, and smooth UX.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 6: CSS Animation Gallery -->
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop" alt="CSS Animation Gallery">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/yourusername/css-gallery" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>CSS Animation Gallery</h4>
+              <p>A creative image gallery with hover effects and CSS transitions.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT JOURNEY  -->
+  <section id="journey" class="section-padding bg-secondary">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">My Path</span>
+        <h2 class="section-title">My Development Journey</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Continuously learning and growing as a developer</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-step">01</span>
+            <h4>Started HTML &amp; CSS</h4>
+            <p>Learned the fundamentals of web structure and styling — building my first web pages.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-step">02</span>
+            <h4>Responsive Web Design</h4>
+            <p>Mastered Flexbox, CSS Grid, and media queries to create layouts for all devices.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-step">03</span>
+            <h4>Started JavaScript</h4>
+            <p>Began learning programming logic — variables, functions, loops, and conditions.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-step">04</span>
+            <h4>DOM &amp; Events</h4>
+            <p>Learned to make websites interactive with DOM manipulation and event handling.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-step">05</span>
+            <h4>Bootstrap Framework</h4>
+            <p>Started building responsive projects faster with Bootstrap's grid and components.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-step">06</span>
+            <h4>Git &amp; GitHub</h4>
+            <p>Learned version control and started hosting my projects on GitHub.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot active">
+            <div class="pulse-ring"></div>
+          </div>
+          <div class="timeline-content glass-card active-card">
+            <span class="timeline-step">07</span>
+            <h4>Continuing to Grow</h4>
+            <p>Improving my Front-End Development skills every day — building better projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  CONTACT SECTION -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Have a project or idea? I'd love to hear from you!</p>
+      </div>
+
+      <div class="row g-5 mt-2">
+        <div class="col-lg-5 reveal">
+          <div class="contact-info">
+            <h3>Have a project or idea?<br>Let's work together!</h3>
+            <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+
+            <div class="contact-links">
+              <a href="mailto:your.email@example.com" class="contact-link-item glass-card">
+                <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-value">saforamirzaee19@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-link-item glass-card">
+                <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">https://github.com/saforamirzaee19-source</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact-link-item glass-card">
+                <div class="contact-link-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">https://www.linkedin.com/in/safora-mirzaee-0832ab423/</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal delay-1">
+          <form class="contact-form glass-card" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control custom-input" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control custom-input" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control custom-input" id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom w-100">
+                  <i class="fas fa-paper-plane me-2"></i> Send Message
+                </button>
+              </div>
+            </div>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">&copy; 2026 Safora Mirzaee. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com/saforamirzaee19-source" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/safora-mirzaee-0832ab423/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:saforamirzaee19@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="JS/main.js"></script>
+</body>
+</html>
