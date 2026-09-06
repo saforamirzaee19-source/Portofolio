@@ -1,6 +1,5 @@
 /*CSS Variables */
 :root {
-  /* Dark Theme (Default) */
   --bg-primary: #0a0a0a;
   --bg-secondary: #111111;
   --bg-card: rgba(255, 255, 255, 0.04);
@@ -49,7 +48,6 @@
   --overlay-bg: rgba(0, 0, 0, 0.5);
 }
 
-/* Reset & Base  */
 *,
 *::before,
 *::after {
@@ -335,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.98px) {
   .navbar-collapse {
     background: var(--navbar-bg);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     padding: 20px;
     margin-top: 12px;
@@ -552,6 +551,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 16px;
   border-radius: 50px;
   background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border: 1px solid var(--glass-border);
   font-size: 0.8rem;
