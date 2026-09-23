@@ -70,6 +70,12 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
+/* Services has its own legacy body styles; keep the portfolio theme isolated. */
+body:has(.portfolio-page) {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -534,7 +540,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.85rem;
   line-height: 1.8;
-  overflow-x: auto;
+  overflow: hidden;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 [data-theme="light"] .code-body {
