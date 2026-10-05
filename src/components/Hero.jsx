@@ -40,7 +40,7 @@ export default function Hero() {
                 <pre className="code-body"><code><span className="code-keyword">const</span> <span className="code-var">developer</span> = {'{'}
   <span className="code-prop">name</span>: <span className="code-string">"Safora Mirzaee"</span>,
   <span className="code-prop">role</span>: <span className="code-string">"Front-End Developer"</span>,
-  <span className="code-prop">skills</span>: [<span className="code-string">"HTML"</span>, <span className="code-string">"CSS"</span>, <span className="code-string">"JS"</span>],
+  <span className="code-prop">skills</span>: [<span className="code-string">"HTML"</span>, <span className="code-string">"CSS"</span>, <span className="code-string">"JS"</span>, <span className="code-string">"React"</span>, <span className="code-string">"Bootstrap"</span>, <span className="code-string">"Tailwind"</span>],
   <span className="code-prop">passion</span>: <span className="code-string">"Building beautiful websites"</span>,
   <span className="code-prop">status</span>: <span className="code-string">"Always learning"</span>
 {'}'};</code></pre>
