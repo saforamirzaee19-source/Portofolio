@@ -76,6 +76,15 @@ export default function Skills() {
           </div>
         </div>
       </div>
+
+       <div className="col-sm-6 col-lg-3 reveal delay-1">
+            <div className="skill-card glass-card">
+              <div className="skill-icon"><i className="fas fa-wind"></i></div>
+              <h4>Basic Python</h4>
+              <p>Making progressive in my programming journey.</p>
+              <div className="skill-bar"><div className="skill-progress" data-progress="65"></div></div>
+            </div>
+          </div>
     </section>
   )
 }
