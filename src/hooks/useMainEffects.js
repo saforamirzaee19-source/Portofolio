@@ -133,7 +133,7 @@ export default function useMainEffects() {
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
 
-    function handleContactSubmit(e) {
+    async function handleContactSubmit(e) {
       e.preventDefault();
 
       const name = document.getElementById('name').value.trim();
@@ -151,13 +151,29 @@ export default function useMainEffects() {
         return;
       }
 
-      // Placeholder: connect to Formspree, EmailJS, or your backend here
-      formSuccess.classList.add('show');
-      contactForm.reset();
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+      submitButton.classList.add('loading');
 
-      setTimeout(() => {
-        formSuccess.classList.remove('show');
-      }, 5000);
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) throw new Error('Form submission failed');
+
+        formSuccess.classList.add('show');
+        contactForm.reset();
+        setTimeout(() => formSuccess.classList.remove('show'), 5000);
+      } catch (error) {
+        console.error('Contact form submission failed:', error);
+        alert('ارسال ایمیل موفق نشد. لطفاً دوباره امتحان کنید.');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.classList.remove('loading');
+      }
     }
     contactForm.addEventListener('submit', handleContactSubmit);
 

@@ -1,8 +1,9 @@
 import nadiaBrand from "../assets/images/nadia-brand.png";
 import luxuryHouse from "../assets/images/luxury-house.png";
-import calculatorImg from "../assets/images/calculator.png";
 import patientHub from "../assets/images/patientHub.png";
 import awakeShop from "../assets/images/awake-shop.png";
+import technologyImg from "../assets/images/AI.png";
+import architectureDashboardImg from "../assets/images/modern.png";
 
 export default function Projects() {
   return (
@@ -57,7 +58,6 @@ export default function Projects() {
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
-                  <span>Bootstrap</span>
                 </div>
                 <ul className="project-features">
                   <li>Responsive design</li>
@@ -97,31 +97,33 @@ export default function Projects() {
               <div className="project-content">
                 <h4>Modern Architecture</h4>
                 <p>
-                  A sleek architecture website focused on beautiful design and
-                  responsive layouts.
+                  An elegant architecture portfolio showcasing contemporary
+                  homes through immersive photography and a responsive layout.
                 </p>
                 <div className="project-tags">
                   <span>HTML</span>
                   <span>CSS</span>
                 </div>
                 <ul className="project-features">
-                  <li>Modern layout</li>
-                  <li>Responsive design</li>
-                  <li>Creative sections</li>
-                  <li>Professional UI</li>
+                  <li>Contemporary home showcase</li>
+                  <li>Immersive visual design</li>
+                  <li>Responsive page layout</li>
                 </ul>
               </div>
             </article>
           </div>
 
-          {/* Project 3: JavaScript Calculator */}
+          {/* Project 3: React Architecture app */}
           <div className="col-md-6 col-lg-4 reveal delay-2">
             <article className="project-card glass-card">
               <div className="project-image">
-                <img src={calculatorImg} alt="JavaScript Calculator" />
+                <img
+                  src={architectureDashboardImg}
+                  alt="Luxe architecture project management dashboard"
+                />
                 <div className="project-overlay">
                   <a
-                    href="#"
+                    href="https://modern-architechture-app-modern-arc.vercel.app/dashboard"
                     className="project-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -130,7 +132,7 @@ export default function Projects() {
                     <i className="fas fa-external-link-alt"></i>
                   </a>
                   <a
-                    href="https://github.com/yourusername/js-calculator"
+                    href="https://github.com/saforamirzaee19-source/Modern-Architechture-App/tree/main/Modern%20Archtechture"
                     className="project-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -141,21 +143,20 @@ export default function Projects() {
                 </div>
               </div>
               <div className="project-content">
-                <h4>JavaScript Calculator</h4>
+                <h4>Luxe Project Hub</h4>
                 <p>
-                  A stylish calculator app with interactive buttons and dynamic
-                  calculations.
+                  An architecture project dashboard for tracking budgets,
+                  progress, schedules, site visits, and team activity.
                 </p>
                 <div className="project-tags">
-                  <span>HTML</span>
+                  <span>React</span>
                   <span>CSS</span>
-                  <span>JavaScript</span>
+                  <span>Tailwind CSS</span>
                 </div>
                 <ul className="project-features">
-                  <li>Basic math operations</li>
-                  <li>Interactive buttons</li>
-                  <li>Dynamic calculations</li>
-                  <li>Clean UI</li>
+                  <li>Project and budget overview</li>
+                  <li>Progress and phase tracking</li>
+                  <li>Team and site activity</li>
                 </ul>
               </div>
             </article>
@@ -191,15 +192,19 @@ export default function Projects() {
               <div className="project-content">
                 <h4>Awake Shop</h4>
                 <p>
-                  A responsive online shop built with HTML, CSS, and vanilla
-                  JavaScript, featuring a clean layout and interactive user
-                  interface.
+                  A responsive online storefront with a clean product-focused
+                  layout and interactive shopping experience.
                 </p>
                 <div className="project-tags">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
                 </div>
+                <ul className="project-features">
+                  <li>Product-focused storefront</li>
+                  <li>Responsive layout</li>
+                  <li>Interactive interface</li>
+                </ul>
               </div>
             </article>
           </div>
@@ -208,10 +213,7 @@ export default function Projects() {
           <div className="col-md-6 col-lg-4 reveal delay-1">
             <article className="project-card glass-card">
               <div className="project-image">
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                  alt="Interactive Form Project"
-                />
+                <img src={technologyImg} alt="Techno AI IT solutions website" />
                 <div className="project-overlay">
                   <a
                     href="https://saforamirzaee19-source.github.io/Technology/#home"
@@ -234,16 +236,22 @@ export default function Projects() {
                 </div>
               </div>
               <div className="project-content">
-                <h4>Interactive Form</h4>
+                <h4>Techno AI</h4>
                 <p>
-                  A form with JavaScript validation, dynamic feedback, and
-                  smooth UX.
+                  An AI-themed IT solutions website presenting services and
+                  digital solutions in a bold, responsive design.
                 </p>
                 <div className="project-tags">
                   <span>HTML</span>
                   <span>CSS</span>
+                  <span>Bootstrap</span>
                   <span>JavaScript</span>
                 </div>
+                <ul className="project-features">
+                  <li>IT services landing page</li>
+                  <li>AI-inspired visual design</li>
+                  <li>Responsive navigation</li>
+                </ul>
               </div>
             </article>
           </div>
@@ -280,21 +288,18 @@ export default function Projects() {
               <div className="project-content">
                 <h4>My PatientHub</h4>
                 <p>
-                  A healthcare platform that helps users find doctors and
-                  clinics quickly.
+                  A healthcare platform that helps people search for doctors and
+                  clinics through a responsive, interactive interface.
                 </p>
                 <div className="project-tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
                   <span>React</span>
+                  <span>CSS</span>
                   <span>Tailwind</span>
                 </div>
                 <ul className="project-features">
-                  <li>Find a doctor</li>
-                  <li>Find a clinic</li>
+                  <li>Find a doctor, Find a clinic</li>
+                  <li>Appointments, Chat</li>
                   <li>Responsive interface</li>
-                  <li>Interactive search experience</li>
                 </ul>
               </div>
             </article>

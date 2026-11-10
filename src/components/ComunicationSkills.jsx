@@ -19,8 +19,9 @@ export default function CommunicationSkills() {
               </div>
               <h4>Multilingual</h4>
               <p className="skills-card-paragraph">
-                Fluent in three languages, so I can communicate with clients and
-                teammates from different backgrounds.
+                Fluent in three languages, Persian, English & German languages.
+                So I can communicate with clients and teammates from different
+                backgrounds.
               </p>
               <div className="skill-bar">
                 <div className="skill-progress" data-progress="90"></div>
