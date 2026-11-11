@@ -45,12 +45,16 @@ Then open the printed local URL.
 npm run build
 ```
 
-## Deploy to GitHub Pages
+## Deploy to Netlify
 
-The GitHub Actions workflow builds the app and publishes the complete `dist/`
-directory, including its hashed JavaScript, CSS, and image assets. In the
-repository settings, set **Pages → Build and deployment → Source** to **GitHub
-Actions**. Push or merge changes to `main` to deploy.
+Connect this repository to Netlify and deploy the `main` branch. The
+`netlify.toml` file configures the build command (`npm run build`),
+the publish directory (`dist`), and the SPA fallback redirect. Netlify will
+build and publish the site on each push to the connected branch.
+
+The previous GitHub Pages workflow was removed when deployment moved to
+Netlify. Its last runs built successfully but failed to create a Pages
+deployment because GitHub Pages was not enabled for the repository.
 
 Note: `services.html` in the original project referenced `images/ai-icon.png`,
 `../images/src-bgc.png`, and `../AI-robot.png`, none of which existed in the uploaded
